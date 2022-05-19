@@ -12,3 +12,9 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+
+
+const nana = images.map((i) => `<li><img src=${i.url}  alt=${i.alt}></li>`).join("");
+const list = document.querySelector(".gallery");
+list.innerHTML = nana;
