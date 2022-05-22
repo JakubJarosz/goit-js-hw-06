@@ -8,7 +8,7 @@ inputHtml.addEventListener("focus", () => {
     inputHtml.classList.remove("invalid");
 });
 inputHtml.addEventListener("blur", () => {
-  if (inputHtml.getAttribute("data-length") > lenght) {
+  if (inputHtml.getAttribute("data-length") == lenght) {
     inputHtml.classList.add("valid");
   } else {
     inputHtml.classList.add("invalid");
